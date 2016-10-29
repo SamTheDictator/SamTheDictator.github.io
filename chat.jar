@@ -1,7 +1,8 @@
 import java.net.*;
 import java.io.*;
-
-public class ChatServer implements Runnable
+import java.awt.*;
+import java.applet.*
+public class ChatServer extends Applet implements Runnable
 {  private ChatServerThread clients[] = new ChatServerThread[50];
    private ServerSocket server = null;
    private Thread       thread = null;
