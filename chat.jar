@@ -3,7 +3,7 @@ import java.io.*;
 import java.awt.*;
 import java.applet.*;
 
-public class ChatServer extends Applet implements Runnable
+public class ChatServer implements Runnable
 {  private ChatServerThread clients[] = new ChatServerThread[50];
    private ServerSocket server = null;
    private Thread       thread = null;
@@ -131,7 +131,7 @@ public class ChatServerThread extends Thread
  import java.net.*;
 import java.io.*;
 
-public class ChatClient implements Runnable
+public class ChatClient extends Applet implements Runnable
 {  private Socket socket              = null;
    private Thread thread              = null;
    private DataInputStream  console   = null;
